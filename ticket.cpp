@@ -143,7 +143,7 @@ public:
    }
    void print()
    {
-      cout << "The driver will recieve a tick of " << FineAmount() << endl;
+      cout << "The driver will recieve a ticket of $" << FineAmount() << endl;
    }
 };
 
@@ -188,7 +188,7 @@ int main()
    if(officer.inspect(car, meter) == true)
    {
       ParkingTicket ticket(car, meter, officer);
-
+      ticket.print();
    }
    else
    {
